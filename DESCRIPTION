@@ -1,0 +1,12 @@
+Package: catcheffortwb
+Type: Package
+Title: What the package does (short line)
+Version: 1.0
+Date: 2020-05-13
+Depends: R (>= 3.5.0), rjags, coda
+Author: Pablo Vajas, with contributions from Clement Calenge
+Maintainer: Pablo Vajas <pablo.vajas@ofb.gouv.fr>
+Description: This package contains the data required to fit the catch-effort models described in Vajas et al. (in prep).
+License: GPL 3
+NeedsCompilation: no
+Packaged: 2020-05-13 08:32:59 UTC; calenge
