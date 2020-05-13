@@ -1,6 +1,6 @@
 Package: catcheffortwb
 Type: Package
-Title: What the package does (short line)
+Title: Fit catch effort model on wild boar hunting data
 Version: 1.0
 Date: 2020-05-13
 Depends: R (>= 3.5.0), rjags, coda
