@@ -19,7 +19,7 @@
     \item{cull}{a numeric vector containing the hunting bag resulting
       from each day of hunting. XXX}
 
-    \item{nhunters}{Number of XXXX}
+    \item{nhunters}{Number of Hunters}
 
     \item{mu}{Number of XXXX}
 
