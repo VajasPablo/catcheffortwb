@@ -7,37 +7,53 @@
 \description{
     This list contains the data required to fit the model in Vajas et
     al. (in prep.) for the Ardeche department.  For anonymity reasons,
-    the Management Units number have been randomized.
+    the Management Units numbers have been randomized.
 }
 \usage{data("bagArdeche")}
 \format{
   A list with the following elements:
 
-  \describe{
-    \item{Nua}{An unique integer vector value corresponding to the length of "nmus": here 308}
+  \describe{ \item{Nua}{Integer vector value corresponding to the length
+      of the vector \code{nmus}: here, equal to 308}
     
-    \item{cull}{Integer value vector containing the hunting bag resulting
-      from each day of hunting. int [1:28573]}
+    \item{cull}{Integer vector containing the hunting bag resulting from
+      each day of hunting. For a given combination of management unit
+      and year, all the hunting days correspond to a batch of successive
+      values in this vector. \code{integer[1:28573]}}
+    
+    \item{nhunters}{Integer vector containing the number of hunters from
+      each day of hunting. \code{integer[1:28573]}} 
+    
+    \item{mu}{Integer vector giving the Management Unit ID for each
+      hunting day in \code{cull}.  Note that these IDs have been
+      randomized. \code{integer[1:28573]}}
 
-    \item{nhunters}{Integer value vector containing the number of hunters from each day of hunting. int [1:28573]}
+    \item{idstart}{Integer vector giving the index of the first hunting
+      day in the batch for a given combination of management unit / year
+      in \code{cull}. \code{integer[1:308]}}
 
-    \item{mu}{Integer value vector of le MU number from each day of hunting. int [1:28573]}
+    \item{month}{Integer vector giving the month number for each day of
+      hunting in \code{cull}. \code{numeric[1:28573]}}
 
-    \item{idstart}{Integer value vector of the line index in this table corresponding to the first hunting day in a MU / year. in [1:308]}
+    \item{nmus}{Integer vector giving the number of hunting days in the
+      batch of values in \code{cull} for each combination of management
+      units and year. \code{integer[1:308]}}
 
-    \item{month}{Numerical values vector of the month number from each day of hunting. num [1:28573]}
+    \item{mug}{Integer vector giving the ID of the combination of
+      management units and year in each element of
+      \code{nmus}. \code{numeric[1:308]}}
 
-    \item{nmus}{Integer value vector of the number of hunting days for each MU/year. int [1:308]}
+    \item{type}{Integer value vector of the type of territory associated
+      with each management unit. \code{numeric [1:28]}} 
 
-    \item{mug}{Numerical values vector corresponding to the MU-year in each component of "nmus". [1:308]}
+    \item{area}{Numeric vector giving the area of the management units
+      (hectares). \code{numeric[1:28]}}
 
-    \item{type}{Numeric value vector of the type of territory associated with each MU. num [1:28]}
+    \item{nmonths}{Integer value. Number of months during a hunting
+    season: 6.}
 
-    \item{area}{Numerical value vector of the MU size (hectare). num [1:28]}
-
-    \item{nmonths}{Unique numerical value vector of the month number. 6}
-
-    \item{ntypes}{Unique numerical value vector of the type number. 3}
+    \item{ntypes}{Integer value. Number of types of management units:
+      3.}
   }
 }
 \details{
@@ -45,10 +61,14 @@
   catch-effort model fit on this dataset
 }
 \source{
-  Fédération Départementale des Chasseurs de l'Ardèche. Adresse: Fédération Départementale des Chasseurs de l’Ardèche, l’Escrinet, 07200 Saint-Etienne-de-Boulogne
+  Fédération Départementale des Chasseurs de l'Ardèche. L’Escrinet,
+    07200 Saint-Etienne-de-Boulogne. France.
 }
 \references{
-  Vajas, P., Calenge, C., Gamelon, M., Girard, F., Melac, O., Chandosne, C., Richard, E., Said, S., Baubet, Eric. in prep : Catch-effort model used as a management tool in exploited populations: wild boar as a case study.
+  Vajas, P., Calenge, C., Gamelon, M., Girard, F., Melac, O., Chandosne,
+    C., Richard, E., Said, S., Baubet, Eric. in prep : Catch-effort
+    model used as a management tool in exploited populations: wild boar
+    as a case study.
 }
 \examples{
 data(bagArdeche)

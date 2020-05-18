@@ -9,8 +9,8 @@
 \packageDescription{catcheffortwb}
 }
 \details{
-  This package contains the data required to fit the catch-effort models
-  described in Vajas et al. (in prep)
+  This package contains the data and the function required to fit the catch-effort models
+  described in Vajas et al. (in prep).
 }
 \author{
 \packageAuthor{catcheffortwb}
