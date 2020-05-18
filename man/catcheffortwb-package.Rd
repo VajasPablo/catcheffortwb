@@ -18,7 +18,7 @@
 Maintainer: \packageMaintainer{catcheffortwb}
 }
 \references{
-  Vajas, P., Calenge, C. etc. XXX, in prep.
+  Vajas, P., Calenge, C., Gamelon, M., Girard, F., Melac, O., Chandosne, C., Richard, E., Said, S., Baubet, Eric. in prep : Catch-effort model used as a management tool in exploited populations: wild boar as a case study.
 }
 \keyword{ package }
 \keyword{ model }
