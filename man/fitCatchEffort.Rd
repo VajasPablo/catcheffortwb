@@ -16,7 +16,7 @@ fitCatchEffort(listData, n.chains = 4, thin = 10, n.iter = 1e+05, n.burnin = 500
   }
   \item{n.chains}{
     Integer. the number of parallel chains for the MCMC (see the same argument in
-    the function \code{jags.model} in package \code{rjags}).
+    the function \code{jags.model} in the package \code{rjags}).
   }
   \item{thin}{
     Integer. Thinning interval for monitors (see the same
@@ -51,8 +51,8 @@ data, through "rjags" and "coda" packages.
   Pablo Vajas \email{pablo.vajas@ofb.gouv.fr}
 }
 \seealso{
-  \code{\link[coda]{coda.sample}}, \link[rjags]{jags.model}},
-\code{\link{bagArdeche}}, \code{\link{bagHerault}}
+  \code{\link[coda]{coda.sample}}, \code{\link[rjags]{jags.model}},
+  \code{\link{bagArdeche}}, \code{\link{bagHerault}}
 }
 \examples{
 \dontrun{
